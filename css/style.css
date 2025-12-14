@@ -1,0 +1,17 @@
+/* Minimal CSS to approximate the WordPress look-and-feel */
+:root{--accent:#2b6cb0;--muted:#666;--wrap:1100px}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;color:#222;line-height:1.45}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:20px}
+.site-header{background:#fff;border-bottom:1px solid #eee}
+.site-title{margin:0;display:inline-block}
+.site-nav{float:right}
+.site-nav a{margin-left:12px;color:var(--muted);text-decoration:none}
+.hero{background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.1)),url('../images/general-physical-therapy.jpg') center/cover no-repeat;color:#fff;padding:60px 0}
+.hero .lead{font-size:1.125rem}
+.btn{display:inline-block;margin-top:12px;padding:10px 16px;background:var(--accent);color:#fff;border-radius:4px;text-decoration:none}
+.services-preview .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.services-list{list-style:none;padding-left:0}
+.site-footer{background:#fafafa;border-top:1px solid #eee;padding:18px 0;margin-top:30px}
+.contact{font-size:.95rem}
+@media (max-width:700px){.site-nav{float:none;margin-top:10px}.wrap{padding:12px}.hero{padding:40px 0}}
